@@ -13,8 +13,8 @@ var PRODUITS = [
 
   // ===== EXOTIQUE : les 3 nouveaux parfums (cat:"exotique" les place dans la section Exotique) =====
   {id:7,cat:"exotique",nom:"BISSAP",desc:"Un sorbet d'hibiscus, rafraîchissant.",prix:700,couleur:"#FFB627",dispo:"ok"},
-  {id:8,cat:"exotique",nom:"CITRON",desc:"une saveur unique et exotique.",prix:700,couleur:"#EFE6D2",dispo:"ok"},
-  {id:9,cat:"exotique",nom:"ORANGE",desc:"pour plus de peps dans votre vie.",prix:700,couleur:"#B0305C",dispo:"ok"}
+  {id:8,cat:"exotique",nom:"CITRON",desc:"Une saveur unique et exotique.",prix:700,couleur:"#EFE6D2",dispo:"ok"},
+  {id:9,cat:"exotique",nom:"ORANGE",desc:"Pour plus de peps dans votre vie.",prix:700,couleur:"#B0305C",dispo:"ok"}
 ];
 var IMG = {
   "1": "passion.jpg",
