@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#6A00F4">
+<title>JENAS.CREAM – Glaces Made in Togo</title>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">
+  <!-- ╔══════════════════════════════════════════════════════════════╗
+       ║  VIDÉO D'ARRIÈRE-PLAN DE L'ACCUEIL                           ║
+       ║  1. Mettez votre vidéo dans le dossier  videos/              ║
+       ║  2. Changez le nom du fichier dans src="..." ci-dessous      ║
+       ║  (format conseillé : MP4, moins de 10 Mo, sans besoin de son)║
+       ╚══════════════════════════════════════════════════════════════╝ -->
+  <video class="herovid" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="ice2.mp4" type="video/mp4">
+  </video>
+  <div class="wrap">
+<header>
+  <a class="logo" href="#">JENAS.CREAM</a>
+  <nav><a class="hide" href="#parfums">Parfums</a><a class="hide" href="#exotique">Exotique</a><a class="hide" href="#infos">Infos</a><a class="hide" href="#avis">Avis</a><button class="btn alt cartopen" id="open"><span class="lv" aria-hidden="true"><i></i><i></i><i></i></span><span>Panier (<span id="count">0</span>)</span></button></nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Des glaces a la togolaise comme vous n'avez jamais vues.</h1>
+    <p>Choisissez vos parfums, ajoutez-les au panier et commandez en quelques clics. Retrait en boutique ou livraison.</p>
+    <a class="btn" href="#parfums">Voir les parfums</a>
+  </div>
+</div>
+</div></div>
+
+<section id="parfums"><div class="wrap">
+  <h2>Nos parfums</h2>
+  <p class="sub">Prix par pot.</p>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="exotique"><div class="wrap">
+  <h2>Exotique <span class="new">Nouveau</span></h2>
+  <p class="sub">Trois saveurs tropicales et d'ici. Prix par pot.</p>
+  <div class="grid" id="grid-exo"></div>
+</div></section>
+
+<section id="infos"><div class="wrap">
+  <h2>Infos pratiques</h2>
+  <p class="sub">Comment récupérer vos glaces.</p>
+  <div class="info">
+    <article class="icard">
+      <div class="ibox"><span>Votre image ici<small>images/retrait.jpg</small></span><img src="retrait.jpg" alt="Retrait en boutique" onerror="this.remove()"></div>
+      <h3>Retrait en boutique</h3><p>Prêt en 15 minutes. Indiquez votre heure à la commande.</p>
+    </article>
+    <article class="icard">
+      <div class="ibox"><span>Votre image ici<small>images/livraison.jpg</small></span><img src="livraison.jpg" alt="Livraison" onerror="this.remove()"></div>
+      <h3>Livraison</h3><p>Pots livrés dans une glacière. Zone et tarif à renseigner.</p>
+    </article>
+    <article class="icard">
+      <div class="ibox"><span>Votre image ici<small>images/contact.jpg</small></span><img src="contact.jpg" alt="Contact" onerror="this.remove()"></div>
+      <h3>Contact</h3><p>pour plus d'information, contacter le 72 90 08 80.</p>
+    </article>
+  </div>
+</div></section>
+
+<section id="avis"><div class="wrap">
+  <h2>Avis de nos clients</h2>
+  <p class="rating" id="rating"></p>
+  <div class="marq" id="revs"></div>
+</div></section>
+
+<section id="roue" aria-label="Nos glaces en images">
+  <div class="wsticky">
+    <div class="wslogan">
+      <h2>Une cuillere, mille emotions.</h2>
+    </div>
+    <div class="wheel" id="wheel"><div class="ring" id="ring"></div></div>
+    <div class="wcap">
+      <p class="wsub" id="wsub"></p>
+      <div class="wtv" id="wtv"><div class="wtt" id="wtt"></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><footer>© jenas.cream</footer></div>
+
+<dialog id="dlg">
+  <h2>Votre commande</h2>
+  <div id="lines"></div>
+  <div class="total"><span>Total</span><span id="total">0</span></div>
+  <div id="form">
+    <label for="nom">Nom</label><input id="nom" autocomplete="name">
+    <label for="tel">Téléphone</label><input id="tel" type="tel" autocomplete="tel">
+    <label for="mode">Mode de réception</label>
+    <select id="mode"><option>Retrait en boutique</option><option>Livraison</option></select>
+  </div>
+  <p class="ok" id="msg" role="status"></p>
+  <div class="actions"><button class="btn" id="send">Commander sur WhatsApp</button><button class="btn alt" id="close">Fermer</button></div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
